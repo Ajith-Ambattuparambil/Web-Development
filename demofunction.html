@@ -7,27 +7,40 @@ function ver()
   {
     if(document.forms.form1.N.value=="")
     {
-      window.alert("Please Provide Data!!!");
-        document.forms.form1.N.focus();
+      window.alert("Please provide your name!!!");
+       document.forms.form1.N.focus();
+        return false;
         } 
-        
-        }
-function save()
- {
-     var name=document.getElementById("N").value;
-     var course=document.getElementById("C").value;
-     var DOB=document.getElementById("D").value;
-     var Address=document.getElementById("A").value;
-     var Phone=document.getElementById("P").value;
-     var Guardian=document.getElementById("G").value;
-     var Hobbies=document.getElementById("H").value;
-     document.write("Name                 :" +name);
-     document.write("<br> Course         :" +course);
-     document.write("<br> Date of birth  :" +DOB);
-     document.write("<br> Address        :"+Address);
-     document.write("<br> Phone          :"+Phone);
-     document.write("<br> Guardian       :"+Guardian);
-     document.write("<br> Hobbies        :"+Hobbies);
+    if(document.forms.form1.Ge.value=="")
+    {
+      window.alert("Please enter gender!!!");
+       document.forms.form1.Ge.focus();
+        return false;    
+    }
+    if(document.forms.form1.A.value=="")
+    {
+      window.alert("Enter the address!!!");
+       document.forms.form1.A.focus();
+        return false;    
+    }
+    if(document.forms.form1.D.value=="")
+    {
+      window.alert("Please enter the date!!!");
+       document.forms.form1.D.focus();
+        return false;    
+    }
+    if(document.forms.form1.P.value=="")
+    {
+      window.alert("Enter the phone number!!!");
+       document.forms.form1.P.focus();
+        return false; 
+    }
+    if(document.forms.form1.G.value=="")
+    {
+      window.alert("Please provide guardian name!!!");
+       document.forms.form1.G.focus();
+        return false;    
+    }
      }
   function clear()
   {
@@ -37,7 +50,7 @@ function save()
 </head>
 <body>
 <center><h2> Mar Athanasius College of Engineering</h2></center>
-<center><h3>Kothamangalam</h3></center>
+<center><h3>Kothamangalam, Kerala, 686600</h3></center>
 <br>
 <center><h4>Registration Form</h4>
 <center>
@@ -59,9 +72,9 @@ function save()
            </tr>
            <tr>
            <td>Gender</td>
-           <td><input type="radio" name= "Gender" id="G">&nbsp; Male &nbsp;
-           <input type="radio" name= "Gender" id="G">&nbsp; Female &nbsp;
-           <input type="radio" name= "Gender" id="G">&nbsp; Others &nbsp;
+           <td><input type="radio" name= "Gender" id="Ge">&nbsp; Male &nbsp;
+           <input type="radio" name= "Gender" id="Ge">&nbsp; Female &nbsp;
+           <input type="radio" name= "Gender" id="Ge">&nbsp; Others &nbsp;
            </td>
            </tr>
            <tr>
