@@ -1,0 +1,47 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<title>MARKLIST</title>
+<script>
+function save()
+ {
+     var name=document.getElementById("t1").value;
+     var sub=document.getElementById("t2").value;
+     var mark=document.getElementById("t3").value;
+     document.write("Name  :" +name);
+     document.write("<br> Subject  :" +sub);
+     document.write("<br> Mark   :"+mark);
+     }
+  function clear()
+  {
+      document.getElementById("form1").reset();
+    }         
+</script>
+</head>
+<body>
+<center>
+<h1>Marks in Subject</h1>
+
+           <form id="form1">
+           <table border=5 cellpadding=5 class="table-dark">
+           <tr>
+           <td>Name</td>
+           <td><input type="text" id="t1"></td>
+           </tr>
+           <tr>
+           <td>Subject  </td>
+           <td><input type="text" id="t2"></td>
+           </tr>
+           <tr>
+           <td>Mark  </td>
+           <td><input type ="text" id="t3"></td>
+           </tr>
+           <tr>
+           <td><Input type="Submit" value="save" onclick="save()"></td>
+           <td><input type="reset" value="Clear" onclick="clear()"></td>
+           </tr>
+           </form>
+           </table>
+           
+</body>
+</html>
