@@ -1,0 +1,113 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<title>MARKLIST</title>
+<script type="text/javascript">
+function ver()
+  {
+    if(document.forms.form1.N.value=="")
+    {
+      window.alert("Please provide your name!!!");
+       document.forms.form1.N.focus();
+        return false;
+        } 
+    if(document.forms.form1.Ge.value=="")
+    {
+      window.alert("Please enter gender!!!");
+       document.forms.form1.Ge.focus();
+        return false;    
+    }
+    if(document.forms.form1.A.value=="")
+    {
+      window.alert("Enter the address!!!");
+       document.forms.form1.A.focus();
+        return false;    
+    }
+    if(document.forms.form1.D.value=="")
+    {
+      window.alert("Please enter the date!!!");
+       document.forms.form1.D.focus();
+        return false;    
+    }
+    if(document.forms.form1.P.value=="")
+    {
+      window.alert("Enter the phone number!!!");
+       document.forms.form1.P.focus();
+        return false; 
+    }
+    if(document.forms.form1.G.value=="")
+    {
+      window.alert("Please provide guardian name!!!");
+       document.forms.form1.G.focus();
+        return false;    
+    }
+     }
+  function clear()
+  {
+      document.getElementById("form1").reset();
+    }         
+</script>
+</head>
+<body>
+<center><h2> Mar Athanasius College of Engineering</h2></center>
+<center><h3>Kothamangalam, Kerala, 686600</h3></center>
+<br>
+<center><h4>Registration Form</h4>
+<center>
+           <form id="form1" onsubmit="return ver()">
+           <table border=5 cellpadding=5 class="table-dark">
+           <tr>
+           <td>Name</td>
+           <td><input type="text" placeholder="Enter your name" id="N"></td>
+           </tr>
+           <tr>
+           <td>Course</td>
+           <td><select id="C">
+                    <option>--select--</option>
+                    <option>BCA</option>
+                    <option>BSc</option>
+                    <option>BA</option>
+                 </select>   
+                    </td>
+           </tr>
+           <tr>
+           <td>Gender</td>
+           <td><input type="radio" name= "Gender" id="Ge">&nbsp; Male &nbsp;
+           <input type="radio" name= "Gender" id="Ge">&nbsp; Female &nbsp;
+           <input type="radio" name= "Gender" id="Ge">&nbsp; Others &nbsp;
+           </td>
+           </tr>
+           <tr>
+           <td>Date Of Birth</td>
+           <td><input type="date" id="D"></td>
+           </tr>
+           <tr>
+           <td>Address</td>
+           <td><textarea name="Address" placeholder="Enter your address" cols="30" rows="3" id="A"></textarea></td>
+           </tr>
+           <tr>
+           <td>Phone</td>
+           <td><input type="phone" placeholder="Phone No." id="P"></td>
+           </tr>
+           <tr>
+           <td>Guardian</td>
+           <td><input type="text" placeholder="Guardian Name" id="G"></td>
+           </tr>
+           <tr>
+           <td>Hobbies</td>
+           <td><input type="checkbox" value="dance" id="H" name="hobbies">&nbsp;Dance &nbsp;
+           <input type="checkbox" value="songs" id="H" name="hobbies">&nbsp; Songs &nbsp;
+           <input type="checkbox" value="Cricket" id="H" name="hobbies">&nbsp; Cricket &nbsp;
+           <input type="checkbox" value="Cricket" id="H" name="hobbies">&nbsp; Football &nbsp;
+           <input type="checkbox" value="Cricket" id="H" name="hobbies">&nbsp; Others &nbsp;
+               </td>
+           </tr>
+           <tr>
+           <td><Input type="submit" value="save" ></td>
+           <td><input type="reset" value="Clear" onclick="clear()"></td>
+           </tr>
+           </form>
+           </table>
+           
+</body>
+</html>
