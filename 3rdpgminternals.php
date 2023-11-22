@@ -1,41 +1,30 @@
 <?php
 $list=array(array("id"=>1,"name"=>"Ajith","MFC"=>39,"ASE"=>37,"DFCA"=>38,"ADS"=>39),
 	array("id"=>2,"name"=>"Akhil","MFC"=>49,"ASE"=>47,"DFCA"=>48,"ADS"=>49),
-	array("id"=>3,"name"=>"Alfiya","MFC"=>29,"ASE"=>17,"DFCA"=>28,"ADS"=>19));
+	array("id"=>3,"name"=>"Alfiya","MFC"=>25,"ASE"=>25,"DFCA"=>28,"ADS"=>19));
 ?>
 <html>
 <head>
 	<title>INTERNAL MARKS</title>
-	<style>
+<style>
+table {
+  border-collapse: collapse;
+  width: 60%;
+}
 
-table{
-border:1px solid black;
-width:500px;
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
-tr:nth-child(even){
-background-color:lightblue;
-}
-th,td{
-padding:10px;
-border:1px solid black;
-text-align:center;
-}
-body{
-font-family:sans-serif;
-}
-a{
-color:hotpink;
-/* padding:10px;
-display:inline-block;*/
-}
-a:hover {
-color:green;
-}
+
+tr:hover {background-color: darkred;}
 </style>
 <body>
 	<h1 align="center">MAR ATHNASIUS COLLEGE OF ENGINEERING</h1><br>
+	<h2 align="center"><u>First internals<u></h2><br>
 	<form method="POST" action="" align="center">
-		<table align="center" border="1">
+		<table align="center" border="5">
 			<tr>
 				<td colspan="2">STUDENT DETAILS</td>
 			</tr>
@@ -61,9 +50,9 @@ if(isset($_POST['next']))
 		if($l["id"]==$_POST['i'] && $l['name']==$_POST['n'])
 		{
 			?>
-			<h3 align="center">NAME :<?php echo $_POST['n'];?></h3>
-			<h3 align="center">ROLL NO:<?php echo $_POST['i'];?></h3>
-			<table align="center" border="1">
+			<h3 align="center">NAME: <?php echo strtoupper($_POST['n']);?></h3>
+			<h3 align="center">ROLL NO: <?php echo $_POST['i'];?></h3>
+			<table align="center" border="5">
 			<tr>
 			<td>SUBJECT</td>
 			<td>MARKS</td>
